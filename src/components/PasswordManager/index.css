@@ -44,9 +44,6 @@
   }
 }
 
-@media screen and (min-width: 768px) {
-}
-
 .password-entry-outer-container {
   background-color: #5763a5;
   border-radius: 10px;
@@ -54,6 +51,7 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 768px) {
@@ -61,24 +59,27 @@
     border-radius: 10px;
     flex-direction: row;
     align-items: center;
-    padding: 20px;
+    padding: 50px;
   }
 }
 
-.password-manager-img-container {
+/* .password-manager-img-container {
   background-image: url('https://assets.ccbp.in/frontend/react-js/password-manager-sm-img.png');
-}
+} */
 
 .password-manager-img {
   height: 400px;
   width: 400px;
   margin: 10px;
+  order: 1;
 }
 
 .password-entry-inner-container {
   background-color: #454f84;
   border-radius: 20px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .entry-heading {
@@ -99,17 +100,25 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   border-radius: 7px;
   margin-bottom: 20px;
   width: 300px;
   height: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .input-container {
+    width: 400px;
+    height: 50px;
+  }
+}
+
 .icon-container {
   display: flex;
   align-items: center;
   padding: 10px;
+  /* border-right: 1px solid #64748b; */
 }
 
 .icon {
@@ -174,6 +183,12 @@
   margin-right: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .count-title {
+    font-size: 23px;
+  }
+}
+
 .count-container {
   border: 1px solid #ffffff;
   border-radius: 20px;
@@ -200,6 +215,14 @@
   border-radius: 5px;
 }
 
+@media screen and (min-width: 768px) {
+  .search-container {
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+  }
+}
+
 .search-input {
   background-color: transparent;
   border: none;
@@ -207,6 +230,12 @@
   font-family: 'Roboto';
   font-weight: 600;
   width: 110px;
+}
+
+@media screen and (min-width: 768px) {
+  .search-input {
+    width: 140px;
+  }
 }
 
 .color-seperator {
@@ -265,5 +294,6 @@
 @media screen and (min-width: 768px) {
   .show-passwords-container {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
