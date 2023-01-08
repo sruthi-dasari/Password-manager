@@ -9,6 +9,12 @@
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .list-item-container {
+    margin-right: 20px;
+  }
+}
+
 .profile-details-container {
   display: flex;
 }
@@ -32,6 +38,12 @@
 }
 
 .password-details-container {
+}
+
+@media screen and (min-width: 768px) {
+  .password-details-container {
+    margin-right: 10px;
+  }
 }
 
 .website-name {
@@ -64,6 +76,25 @@
 .stars-img {
   height: 20px;
   width: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  .website-name {
+    font-size: 16px;
+  }
+
+  .user-name {
+    font-size: 15px;
+  }
+
+  .password {
+    font-size: 15px;
+  }
+
+  .stars-img {
+    height: 16px;
+    width: 100px;
+  }
 }
 
 .delete-btn {
