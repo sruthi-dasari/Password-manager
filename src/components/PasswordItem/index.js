@@ -44,7 +44,7 @@ class PasswordItem extends Component {
           className="delete-btn"
           type="button"
           onClick={this.onDelete}
-          //   testid="delete"
+          testid="delete"
         >
           <img
             className="delete-icon"
